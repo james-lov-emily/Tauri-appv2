@@ -1,0 +1,656 @@
+Uri: https://cdn.jsdelivr.net/npm/apexcharts
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\apexcharts
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\bootstrap@5.0.0-beta3\dist\js\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/chart.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\chart.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\remixicon@2.5.0\fonts\remixicon.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.eot?t=1590207869815
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\remixicon@2.5.0\fonts\remixicon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.svg?t=1590207869815
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\remixicon@2.5.0\fonts\remixicon.svg
+Content Type: image/svg+xml
+
+Uri: https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.ttf?t=1590207869815
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\remixicon@2.5.0\fonts\remixicon.ttf
+Content Type: font/ttf
+
+Uri: https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.woff2?t=1590207869815
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\remixicon@2.5.0\fonts\remixicon.woff2
+Content Type: font/woff2
+
+Uri: https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.woff?t=1590207869815
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\npm\remixicon@2.5.0\fonts\remixicon.woff
+Content Type: font/woff
+
+Uri: https://code.jquery.com/jquery-3.5.1.min.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\jquery-3.5.1.min.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\index.htm
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/404.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\404.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/activities.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\activities.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/assets/css/bootstrap_custom.css
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\css\bootstrap_custom.css
+Content Type: text/css
+
+Uri: https://cryptdash.vercel.app/assets/css/dd.css
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\css\dd.css
+Content Type: text/css
+
+Uri: https://cryptdash.vercel.app/assets/css/nice-select.css
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\css\nice-select.css
+Content Type: text/css
+
+Uri: https://cryptdash.vercel.app/assets/css/styles.css
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\css\styles.css
+Content Type: text/css
+
+Uri: https://cryptdash.vercel.app/assets/img/avatar.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\avatar.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chart_green.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chart_green.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chart_green_2.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chart_green_2.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chart_green_3.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chart_green_3.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chart_red_1.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chart_red_1.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chart_red_2.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chart_red_2.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chart_red_3.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chart_red_3.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chat_1.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chat_1.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chat_2.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chat_2.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chat_3.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chat_3.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chat_4.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chat_4.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chat_5.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chat_5.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/chat_6.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\chat_6.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/binance.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\binance.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/bitcoin.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\bitcoin.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/dash.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\dash.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/digibyte.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\digibyte.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/dogecoin.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\dogecoin.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/ellaism.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\ellaism.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/etherium.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\etherium.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/monero.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\monero.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/ripple.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\ripple.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/tether.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\tether.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/crypto/tron.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\crypto\tron.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/dashboard_icon.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\dashboard_icon.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/dashboard_icon_inactive.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\dashboard_icon_inactive.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/error.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\error.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/favicon.ico
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://cryptdash.vercel.app/assets/img/logo.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\logo.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/profile.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\profile.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_1.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_1.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_10.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_10.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_2.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_2.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_3.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_3.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_4.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_4.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_5.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_5.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_6.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_6.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_7.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_7.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_8.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_8.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_9.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_9.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_1.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_1.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_10.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_10.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_11.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_11.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_2.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_2.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_3.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_3.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_4.jpg
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_4.jpg
+Content Type: image/jpeg
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_5.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_5.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_6.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_6.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_7.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_7.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_8.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_8.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/promotions/promo_s_9.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\promotions\promo_s_9.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/protected.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\protected.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/qrcode.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\qrcode.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/signin.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\signin.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/img/signin_logo.png
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\img\signin_logo.png
+Content Type: image/png
+
+Uri: https://cryptdash.vercel.app/assets/js/chart.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\js\chart.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/assets/js/dd.min.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\js\dd.min.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/assets/js/exchange_chart.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\js\exchange_chart.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/assets/js/jquery.nice-select.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\js\jquery.nice-select.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/assets/js/main.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/assets/js/price_chart.js
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\assets\js\price_chart.js
+Content Type: application/javascript
+
+Uri: https://cryptdash.vercel.app/exchange.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\exchange.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/index.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\index.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/notifications.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\notifications.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/price.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\price.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/promotions.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\promotions.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/protected.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\protected.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/settings.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\settings.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/signin.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\signin.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/signup.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\signup.html
+Content Type: text/html
+
+Uri: https://cryptdash.vercel.app/wallet.html
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\wallet.html
+Content Type: text/html
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\css2-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2.css
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\inter\v13\UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1i-q_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1p-p_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1t-p_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDAvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDAvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBIG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBIG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBxG-em.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDBxG-em.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCdHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCdHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHeem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHeem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOem.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/materialsymbolsoutlined/v166/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDDxHOem.ttf
+File Name: C:\Downloaded Web Sites\cryptdash.vercel.app\s\materialsymbolsoutlined\v166\kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzazHD_dY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDDxHOem.ttf
+Content Type: font/ttf
+

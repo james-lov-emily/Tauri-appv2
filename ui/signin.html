@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>CryptDash - Signin page</title>
+    <link href="npm/remixicon%402.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap_custom.css">
+    <link rel="stylesheet" href="assets/css/toast.css?v1">
+    <link rel="stylesheet" href="assets/css/styles.css?v0">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="assets/Font-Awesome-6/css/all.css">
+    <style>
+        .titlebar {
+            height: 30px;
+            background: #394848;
+            user-select: none;
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+                z-index: 1232;
+        }
+
+        .titlebar-button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+        }
+
+        .titlebar-button:hover {
+            background: #5bbec3;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="signin">
+        <div data-tauri-drag-region class="titlebar">
+            <div class="titlebar-button" id="titlebar-minimize">
+                <img src="assets/img/mdi_window-minimize.svg" alt="minimize" />
+            </div>
+            <div class="titlebar-button" id="titlebar-maximize">
+                <img src="assets/img/mdi_window-maximize.svg" alt="maximize" />
+            </div>
+            <div class="titlebar-button" id="titlebar-close">
+                <img src="assets/img/mdi_close.svg" alt="close" />
+            </div>
+        </div>
+        <div class="signin-inner">
+            <div class="row d-flex align-items-center g-3">
+                <div class="col-md-5">
+                    <div class="signin-left">
+                        <div class="sidebar-heading">
+                            <a class="row sidebar-a" href="index.html">
+                                <img id="logo" class="logo img col-md-2" src="assets/img/logo_.png" alt="">
+                                <div class="text-wrapper-60 col-md-2">Fake Crypto Sender</div>
+                            </a>
+                        </div>
+                        <h3 class="text-white pt-4">Welcome</h3>
+                        <p class="pb-3 text-white">Sign in to your account and get started with us!
+                        </p>
+                        <p>www.fakecryptosender.com</p>
+                        <div class="mt-3">
+                            <img class="img-fluid" src="assets/img/signin.png" alt="signin">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-wrapper">
+                        <form id="form-login">
+                            <h4 class="text-center text-white">Sign In</h4>
+                            <div class="divider mt-4">
+                                <div class="line"></div>
+                                <span class="text-white">OR</span>
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="fw-semibold mb-2 mt-3" for="password">E-mail</label>
+                                <input type="email" id="_email" name="_email" required="" data-error="Enter your Email"
+                                    placeholder="E-mail ........" class="form-control py-2">
+                                <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="fw-semibold mb-2 mt-3" for="password">Password</label>
+                                <input type="password" id="_password" required="" name="_password"
+                                    data-error="Please enter your password" placeholder="Password ........"
+                                    class="form-control py-2">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="mt-2 d-flex justify-content-between flex-wrap gap-2">
+                                    <div>
+                                        <input type="checkbox" name="_remember" id="_remember">
+                                        <span><label for="remember" style="padding-left: 2%;">Remember me</label></span>
+                                    </div>
+                                    <a class="primary" href="#">Forgot password? <br /> www.fakecryptosender.com</a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="submit" id="form_login_submit" value="Sign In"
+                                    class="primary-outline form_login_submit"><span><i
+                                            class="fa-solid fa-arrow-right-to-bracket refreshIcon"></i></span> &nbsp;
+                                    Sign In</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">  </script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/default.js?v4"></script>
+<script src="assets/js/jquery.nice-select.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/form-validator.min.js"></script>
+<script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<script src="assets/js/jstorage.min.js"></script>
+
+
+<script type="text/javascript">
+    // Tauri API for window controls
+    //switch of the bars 
+
+
+    // console.log($.jStorage.get("user"))
+    $("#form_login_submit").click((e) => {
+        // validate($("#form-login"))
+
+        $("#form-login").validator();
+        var validator = $("#form-login").data("bs.validator");
+        validator.validate();
+
+        if (!validator.hasErrors()) {
+            e.preventDefault();
+
+            var button = $(".form_login_submit")
+            var buttonVal = button.html()
+            // button.val("Please wait...")
+            singleToggles(".fa-arrow-right-to-bracket", ".fa-solid fa-sync fa-spin", ".refreshIcon")
+            button.attr("disabled", "true");
+            const _formData = {
+                _email: $("#_email").val(),
+                _password: $("#_password").val(),
+                _remember: $("#_remember").val(),
+            };
+            console.log(_formData);
+            db_request(_formData, button, buttonVal)
+        } else {
+
+        }
+    });
+
+    const db_request = async (form_values, button, buttonVal) => {
+
+        const API_URL = "https://machantpu.business/Admin/pages/admin_temps/admin/app/login.php";
+        const HEADER = {
+            "Access-Control-Allow-Origin": "*",
+        };
+        // console.log(`${_authCode} ${$user}`);
+        const $data = form_values;
+        try {
+            const response = await fetch(API_URL, {
+                method: "POST",
+                type: "json",
+                Cache: true,
+                body: JSON.stringify($data),
+            });
+            console.log(response);
+            if (response.status == 200) {
+                const data = await response.json();
+                if (!data.error) {
+                    console.log(data);
+                    toast("<h6 style=''> Success, <br/> Welcome Back <h6>", "success", tTime);
+
+                    const set$holding = data.holdings;
+                    const set$user = data.user;
+                    const set$gasHolding = data.gas;
+                    const set$TransAdd = data.wallet;
+
+
+                    if ($("#_remember").prop('checked')) {
+                        //save local storage
+                        if (typeof localStorage !== 'undefined') {
+                            try {
+
+                                $.jStorage.set("holdings", set$holding)
+                                $.jStorage.set("user", set$user)
+                                $.jStorage.set("gasHolding", set$gasHolding)
+                                $.jStorage.set("transAdd", set$TransAdd)
+                                console.log("entered")
+
+                            } catch (e) {
+                                //return false;
+                            }
+                        }
+                    } else {
+                        if (typeof localStorage !== 'undefined') {
+                            try {
+
+                                $.jStorage.set("holdings", set$holding)
+                                $.jStorage.set("user", set$user)
+                                $.jStorage.set("gasHolding", set$gasHolding)
+                                $.jStorage.set("transAdd", set$TransAdd)
+                                $.jStorage.setTTL("user", 1003000); // expires in 3 seconds (3000)
+                                console.log("entered")
+
+                            } catch (e) {
+                                //return false;
+                            }
+                        }
+                    }
+
+                    var stope_Int = setInterval(() => {
+                        button.removeAttr("disabled");
+                        button.html(buttonVal);
+                        window.location = "index.html";
+                        clearInterval(stope_Int)
+                    }, 3000);
+
+                } else if (data.error) {
+                    singleToggles("fa-arrow-right-to-bracket", "fa-solid fa-sync fa-spin", ".refreshIcon")
+                    console.log("data");
+                    button.removeAttr("disabled");
+                    button.html(buttonVal);
+                    toast("Incorrect Email or Password", "error", tTime);
+                }
+            }
+        } catch (error) {
+            // console.log(data);
+            button.removeAttr("disabled");
+            button.html(buttonVal);
+            toast(error, "error", tTime);
+        }
+    };
+
+</script>
+
+</html>

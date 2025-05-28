@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/bootstrap_custom.css">
+  <link rel="stylesheet" href="css2.css">
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="assets/nice-select2/dist/css/nice-select2.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css">
+  <link rel="stylesheet" href="assets/Font-Awesome-6/css/all.css">
+
+  <title>Fake Crypto Sender</title>
+  <style>
+    .titlebar {
+      height: 30px;
+      background: #394848;
+      user-select: none;
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1232;
+    }
+
+    .titlebar-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
+
+    .titlebar-button:hover {
+      background: #5bbec3;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-tauri-drag-region class="titlebar">
+    <div class="titlebar-button" id="titlebar-minimize">
+      <img src="assets/img/mdi_window-minimize.svg" alt="minimize" />
+    </div>
+    <div class="titlebar-button" id="titlebar-maximize">
+      <img src="assets/img/mdi_window-maximize.svg" alt="maximize" />
+    </div>
+    <div class="titlebar-button" id="titlebar-close">
+      <img src="assets/img/mdi_close.svg" alt="close" />
+    </div>
+  </div>
+  <div class="d-flex wrapper" id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <a class="row sidebar-a" href="#">
+          <img id="logo" class="logo img col-md-2" src="assets/img/logo.png" alt="">
+          <div class="text-wrapper-60 col-md-2">Fake Crypto Sender</div>
+        </a>
+      </div>
+      <nav class="sidebar mb-4">
+        <ul class="nav flex-column" id="nav_accordion">
+          <li class="nav-item">
+            <a class="nav-link active d-flex gap-2 align-items-center" href="index.html">
+              <img src="assets/img/dashboard_icon.png" alt="">
+              <span class="fw-semibold">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex gap-2 align-items-center" href="portfolio.html">
+              <span class="material-symbols-outlined fw-lighter">
+                <i class="fa-solid fa-wallet fa-xs"></i>
+              </span>
+              <span class="fw-semibold">Portfolio</span>
+            </a>
+          </li>
+          <li class="nav-item" id="moodLink">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex gap-2 align-items-center" href="markets.html">
+              <span class="material-symbols-outlined fw-lighter">
+                <i class="fa-solid fa-chart-line fa-xs"></i>
+              </span>
+              <span class="fw-semibold">Markets</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex gap-2 align-items-center" href="transactions.html">
+              <span class="material-symbols-outlined fw-lighter">
+                <i class="fa-solid fa-money-bill-transfer fa-xs"></i>
+              </span>
+              <span class="fw-semibold">Transactions</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link d-flex gap-2 align-items-center" href="settings.html">
+              <span class="material-symbols-outlined fw-lighter">
+                <i class="fa-solid fa-id-card fa-xs"></i>
+              </span>
+              <span class="fw-semibold">Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button class="primary-btn flash" style="width: 30%;margin-left: 37px;">
+              <span><i class="fa-solid fa-bolt fa-beat" style="--fa-animation-duration: 2s;"></i></span> Flash</button>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg py-lg-3 px-2 px-lg-4 d-flex fixed-top justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center d-lg-none">
+            <span class="material-symbols-outlined menu-toggle" id="menu-toggle">
+              menu
+            </span>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 p-lg-2 p-lg-0 align-items-center justify-content-end">
+          <div class="nav-item dropdown">
+            <a class="d-flex gap-2 align-items-center" href="#" id="navbarDropdown4" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img height="60" width="60" class="img-fluid" src="assets/img/avatar.png" alt="user" style="
+    padding-top: 20%;
+">
+              <div class="d-flex flex-column d-none d-xl-block">
+                <p class="mb-0 text-white fw-semibold profile">Profile</p>
+                <span class="small text-white profileBal">$00.00</span>
+              </div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end user shadow border-0" aria-labelledby="navbarDropdown4"
+              onclick="event.stopPropagation()">
+              <li><span class="px-3 d-inline-block " id="welcome">Welcome Kim!</span></li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-2" href="settings.html">
+                  <span class="material-symbols-outlined fw-light">
+                    <i class="fa-solid fa-user-gear fa-xs"></i>
+                  </span>
+                  <span class="fw-semibold">Settings</span></a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center gap-1" id="logout" href="#">
+                  <span class="material-symbols-outlined fw-light">
+                    <i class="fa-solid fa-arrow-right-to-bracket fa-xs"></i>
+                  </span>
+                  <span class="fw-semibold" style="padding-left: 5%;">Log Out</span> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- For pc -->
+      </nav>
+      <div class="container-fluid main-content px-2 px-lg-4">
+        <div class="row" style="margin: 0% -40px 0% -40px;">
+          <div class="col-xl-12 col-xxl-12">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow"
+                  target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> -->
+              <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                  {
+                    "symbols": [
+                      {
+                        "proName": "FOREXCOM:SPXUSD",
+                        "title": "S&P 500 Index"
+                      },
+                      {
+                        "proName": "FOREXCOM:NSXUSD",
+                        "title": "US 100 Cash CFD"
+                      },
+                      {
+                        "proName": "FX_IDC:EURUSD",
+                        "title": "EUR to USD"
+                      },
+                      {
+                        "proName": "BITSTAMP:BTCUSD",
+                        "title": "Bitcoin"
+                      },
+                      {
+                        "proName": "BITSTAMP:ETHUSD",
+                        "title": "Ethereum"
+                      }
+                    ],
+                      "showSymbolLogo": true,
+                        "isTransparent": false,
+                          "displayMode": "adaptive",
+                            "colorTheme": "dark",
+                              "locale": "en",
+                                "width": "100%"
+                  }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+
+          </div>
+        </div>
+        <div class="row my-2 g-3 gx-lg-4 pb-3">
+          <div class="col-xl-5 col-xxl-3">
+
+            <div class="doughnut">
+              <p class="large text-center mt-3">Total Commutative Balance</p>
+              <h3 class="text-white text-center profileBal">$000.00</h3>
+              <!-- <p class="primary text-center">11,032.24 USD</p> -->
+              <div class="d-flex justify-content-center">
+                <button class="primary-btn flash"><span><i class="fa-solid fa-bolt fa-beat"
+                      style="--fa-animation-duration: 2s;"></i></span> Flash</button>&nbsp;&nbsp;
+                <button class="outline-btn-lg refresh"><span class="material-symbols-outlined fw-lighter">
+                    <!-- <i class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i> -->
+                    <i class="fa-solid fa-sync refreshIcon"></i>
+                  </span></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row my-2 g-3 g-lg-4 coin-chart">
+
+        </div>
+
+        <!-- Main Chart Area -->
+        <!-- <div class="row my-2 g-3 gx-lg-4">
+          <div class="col-xl-7 col-xxl-9">
+            <div class="mainchart px-3 px-md-4 py-3 py-lg-4">
+              <div class="d-flex w-100 flex-wrap justify-content-between pb-4 bottom-border">
+                <h4 class="mb-0">Monthly Overall Growth</h4>
+                <div class="d-flex align-items-center gap-3">
+                  <button class="outline-btn">Week</button>
+                  <button class="outline-btn">Month</button>
+                  <button class="outline-btn">Year</button>
+                </div>
+              </div>
+              <div class="chart-container">
+                <canvas id="chart_1"></canvas>
+              </div>
+            </div>
+          </div>
+          
+        </div> -->
+
+        <!-- Tables -->
+        <div class="row my-2 g-3 gx-lg-4 pb-3">
+          <div class="col-xl-12 col-xxl-12">
+            <div class="mainchart px-3 px-md-4 py-3 py-lg-4 ">
+              <div>
+                <h5 class="text-whit mb-3"></h5>
+              </div>
+              <div class="recent-contact pb-2 pt-3">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="height:100%;width:100%">
+                  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%">
+                  </div>
+
+                  <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                      {
+                        "autosize": true,
+                          "height": 490,
+                            "symbol": "BINANCE:BTCUSDT",
+                              "interval": "D",
+                                "timezone": "Etc/UTC",
+                                  "theme": "dark",
+                                    "style": "1",
+                                      "locale": "en",
+                                        "enable_publishing": false,
+                                          "allow_symbol_change": true,
+                                            "calendar": false,
+                                              "support_host": "https://www.tradingview.com"
+                      }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade settings" id="Auth" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="AuthLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-7" id="AuthLabel">Authorization Code</h1>
+              </div>
+              <div class="modal-body">
+                <form action="#" method="post" id="AuthCode">
+                  <div class="d-flex flex-wrap gap-4 align-items-center mt-3">
+                    <div class="d-flex flex-column qr-code flex-shrink-0">
+                      <span class="fw-bold text-white large mt-2 text-center">Verify Code</span>
+                    </div>
+                    <div>
+                      <span class="fw-bold text-white medium mb-3">Enter the Fifteen-digit
+                        Authorization Code</span>
+                      <br>
+                      <p class="medium">If you have forgotten or don't have an Authorization Code
+                        contact us @<a href="#">www.fakecryptosender.com </a> </p>
+                      <div class="otp mb-2 form-group">
+                        <div class="help-block with-errors"></div>
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                        <input type="text" pattern="^[^\s]+$" required class="otp-input" placeholder="0" maxlength="1">
+                      </div>
+                      <div class="col-md-6" id="">
+                        <small class="AuthCodeError" id="AuthCodeError"></small>
+                        <small class="AuthCodeSuccess" id="AuthCodeSuccess"></small>
+                      </div>
+                      <button class="primary-btn-lg mt-3" id="AuthCodeSubmit" type="submit" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-title="Click to Verify"><span><i
+                            class="fa-solid fa-fingerprint search"></i></span>
+                        Verify
+                      </button>
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade settings" id="Conn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="ConnLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title fs-7" id="ConnLabel">Connect to Tor/Proxy to Flash </h6>
+              </div>
+              <div class="modal-body">
+                <form action="#" method="post" id="ConnCode">
+                  <div class="d-flex flex-wrap gap-4 align-items-center mt-3">
+                    <div>
+                      <div class="col-md-12 form-group">
+                        <label class="fw-semibold mb-2 mt-3" for="_con">Select Location</label>
+                        <select class="form-control" name="_con" id="_con" required="">
+                          <option value="132.82.221.184">Panama</option>
+                          <option value="155.144.217.13">Sweden</option>
+                          <option value="246.204.106.71">Malaysia</option>
+                          <option value="152.140.154.202">France</option>
+                          <option value="66.82.23.51">UAE</option>
+                          <option value="77.55.215.245">Singapore</option>
+                          <option value="221.47.245.191">Iceland</option>
+                          <option value="105.141.164.213">Switzerland</option>
+                          <option value="153.85.124.35">Austria</option>
+                          <option value="37.13.169.158">Netherlands</option>
+                          <option value="90.232.51.118">Germany</option>
+                          <option value="68.199.43.226">Gibraltar</option>
+                          <option value="195.110.51.32">Spain</option>
+                          <option value="169.48.7.212">Seychelles</option>
+                          <option value="296.36.2.412">Romania</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <br />
+                      <br />
+                      <br />
+                      <div class="col-md-12" id="">
+                        <small class="ConnCodeSuccess" id="ConnCodeSuccess"></small>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <button class="primary-btn-lg mt-3" id="ConnSubmit" type="submit" data-bs-toggle="tooltip"
+                          data-bs-placement="right" data-bs-title="Click to Connect"><span><i
+                              class="fa-solid fa-plug plug"></i></span>
+                          Connect
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="row py-2 g-3 g-lg-4 top-border footer">
+          <div class="col-lg-12">
+            <span class="text-center text-lg-start d-block w-100" id="copyright"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  <script src="npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">  </script>
+  <!-- <script src="assets/js/jquery.nice-select.js"></script> -->
+  <script src="npm/apexcharts"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chart.js"></script>
+  <script src="assets/js/exchange_chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cryptocharts"></script>
+  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script src="assets/js/jstorage.min.js"></script>
+  <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+  <script src="assets/js/toast.js"></script>
+  <script src="assets/js/default.js?v4"></script>
+  <script src="assets/js/contact-form-script.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/nice-select2/dist/js/nice-select2.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/be4f3751c5.js" crossorigin="anonymous"></script> -->
+  <script type="text/javascript">
+    // global
+
+
+    var $user = $.jStorage.get("user")
+    console.log($user)
+    if (!$user)
+      window.location = "signin.html"
+
+
+    var myModalConn = new bootstrap.Modal(document.getElementById('Conn'), { backdrop: "static", keyboard: false })
+    NiceSelect.bind($("#_con")[0]);
+    var myModalAuth = new bootstrap.Modal(document.getElementById('Auth'), { backdrop: "static", keyboard: false })
+
+    var $isConn = $.jStorage.get("isConn") ?? false
+    var $isAuth = $user[0].auth ?? "false";
+
+    var net = {};
+    var total = 0;
+    var gasTotal = 0;
+
+
+  </script>
+
+  <script type="text/javascript">
+
+    if ($isAuth != "true") {
+      console.log(`Auth ${$isAuth}`)
+      myModalAuth.show()
+    } else {
+      if (!$isConn) {
+        myModalConn.show()
+      }
+    }
+    var els = [...document.getElementsByClassName('otp-input')]
+    els.forEach(el => {
+      $(el).keyup((e) => {
+        e.preventDefault()
+        var val = $(el).val() ?? 0
+        $(el).val(val[0])
+
+        if (el.value == "") {
+          //  $(el).val("0")
+        }
+      })
+    })
+
+    $("#AuthCodeSubmit").click(function (e) {
+      e.preventDefault()
+      $("#AuthCode").validator();
+      var validator = $("#AuthCode").data("bs.validator");
+      validator.validate();
+
+
+      var codes = ""
+      if (!validator.hasErrors()) {
+
+        var els = [...document.getElementsByClassName('otp-input')]
+        els.forEach(el => {
+          codes += $(el).val() ?? 0
+        })
+        // console.log(val)
+        // return
+
+        var button = $("#AuthCodeSubmit")
+        var buttonVal = button.html()
+
+        var $Code = codes
+        // button.val("Please wait...")
+        singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+        button.attr("disabled", "true");
+        $("#AuthCodeSubmit").prop({ "disabled": "true" })
+
+        const _formData = {
+          _user_id: $user[0].id,
+          _authCode: $Code,
+
+        };
+        console.log(_formData);
+
+        db_request_Auth(_formData, button)
+      }
+    })
+    const db_request_Auth = async (form_values, button) => {
+
+      const API_URL = "https://machantpu.business/Admin/pages/admin_temps/admin/app/authCode.php";
+      const HEADER = {
+        "Access-Control-Allow-Origin": "*",
+      };
+      // console.log(`${_authCode} ${$user}`);
+      const $data = form_values;
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          type: "json",
+          Cache: true,
+          body: JSON.stringify($data),
+        });
+        console.log(response);
+
+        // console.log(response);
+        const data = await response.json();
+        if (!data.error) {
+          console.log(data);
+
+          // now update the storage
+          $user[0].auth = "true";
+          $.jStorage.set("user", $user);
+
+          $("#AuthCodeSuccess").html("Code Validated ✔");
+          $("#AuthCodeError").html(``)
+          button.removeAttr("disabled");
+          singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+
+          setTimeout(() => {
+            myModalAuth.hide()
+            if (!$isConn) {
+              myModalConn.show()
+            }
+          }, 10000);
+        } else {
+          $("#AuthCodeError").html("Wrong Code Supplied ❌");
+          $("#AuthCodeSuccess").html(``)
+          button.removeAttr("disabled");
+          singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+        }
+
+
+      } catch (error) {
+        // console.log(data);
+        button.removeAttr("disabled");
+        singleToggles(".fa-fingerprint", ".fa-solid fa-sync fa-spin", ".search")
+        toast("Error communication to server", "error", tTime);
+      }
+    };
+
+  </script>
+
+  <script type="text/javascript">
+    $("#ConnSubmit").click(function (e) {
+      e.preventDefault()
+
+      var _conn = $("#_conn option:selected").text()
+      var button = $("#ConnSubmit")
+      var buttonVal = button.html()
+
+      // button.val("Please wait...")
+      singleToggles(".fa-plug", ".fa-solid fa-sync fa-spin", ".plug")
+
+      button.attr("disabled", "true");
+      $("#ConnSubmit").prop({ "disabled": "true" })
+
+      if (_conn == "Select an option") {
+        $("#ConnCodeError").text(`Select a VPN Location Please`)
+        $("#ConnSubmit").removeAttr("disabled")
+        singleToggles(".fa-plug", ".fa-solid fa-sync fa-spin", ".plug")
+
+        return
+      }
+
+
+      $("#ConnCodeSuccess").text(`Connecting to ${$("#_con option:selected").text()} Please wait...`)
+      $.jStorage.set("isConn", true);
+
+      setTimeout(() => {
+        $("#ConnCodeSuccess").text(`Connected to ${$("#_con option:selected").html()}; IP => ${$("#_con option:selected").val()} successfully`)
+        setTimeout(() => {
+          myModalConn.hide()
+          window.location = "index.html";
+        }, 3000)
+      }, 10000);
+    })
+  </script>
+
+
+  <script>
+    // var result = CryptoCharts.priceHistory({
+    //   chart_id: "mychart",
+    //   cryptocompare_tickers: ["BTC"],
+    //   last_days: 360,
+    //   axes: false,
+    //   loading_indicator: true,
+    //   options: {
+    //     fill: {
+    //       colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+    //       type: "gradient",
+    //       gradient: {
+    //         shadeIntensity: 1,
+    //         opacityFrom: 0.9,
+    //         opacityTo: 0.3,
+    //         stops: [0, 90, 100]
+    //       }
+    //     },
+    //     chart: {
+    //       height: "auto",
+    //       type: "area"
+    //     },
+    //     colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+    //   }
+    // });
+
+    // CryptoCharts.priceHistory({
+    //   chart_id: "mychart1",
+    //   cryptocompare_tickers: ["ETH"],
+    //   last_days: 360,
+    //   axes: false,
+    //   loading_indicator: true,
+    //   options: {
+    //     fill: {
+    //       colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+    //       type: "gradient",
+    //       gradient: {
+    //         shadeIntensity: 1,
+    //         opacityFrom: 0.9,
+    //         opacityTo: 0.3,
+    //         stops: [0, 90, 100]
+    //       }
+    //     },
+    //     chart: {
+    //       height: "auto",
+    //       type: "area"
+    //     },
+    //     colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+    //   }
+    // });
+    // CryptoCharts.priceHistory({
+    //   chart_id: "mychart2",
+    //   cryptocompare_tickers: ["doge"],
+    //   last_days: 360,
+    //   axes: false,
+    //   loading_indicator: true,
+    //   options: {
+    //     fill: {
+    //       colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+    //       type: "gradient",
+    //       gradient: {
+    //         shadeIntensity: 1,
+    //         opacityFrom: 0.9,
+    //         opacityTo: 0.3,
+    //         stops: [0, 90, 100]
+    //       }
+    //     },
+    //     chart: {
+    //       height: "auto",
+    //       type: "area"
+    //     },
+    //     colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+    //   }
+    // });
+  </script>
+
+  <script type="text/javascript">
+    const db_request = async () => {
+      const API_URL = "https://machantpu.business/Admin/pages/admin_temps/admin/app/fetchTrans.php";
+      const HEADER = {
+        "Access-Control-Allow-Origin": "*",
+      };
+      var tbrData = "";
+      // console.log(`${_authCode} ${$user}`);
+      const $data = {
+        _user_id: 7,
+      };
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          type: "json",
+          Cache: true,
+          contentType: 'application/json',
+          secure: true,
+          body: JSON.stringify($data),
+        });
+        console.log(response);
+        if (response.status == 200) {
+          const data = await response.json();
+          if (!data.error) {
+            console.log(data);
+            data.trans.forEach(element => {
+              tbrData += `
+                    <tr class="border-b2">
+                      <td>Exchange</td>
+                      <td class="d-flex align-items-center gap-2">
+                        <img src="assets/img/cryptocurrency-icons/32/color/${element.short}.png" alt="">
+                        ${element.coin}
+                      </td>
+                      <td style="font-style:capitalized">${element.date}</td>
+                      <td>${element.trx}</td>
+                      <td>${element.value}</td>
+                      ${(element.trx == "Processing. Please Wait...") ?
+                  "<td><span class='red-tag'>Pending</span></td>" :
+                  "<td><span class='green-tag'>Sent</span></td>"}
+                      
+                    </tr>
+                    `
+            });
+
+            $(".tbr").html(tbrData)
+            new DataTable('#trans');
+          } else {
+            console.log(data);
+            // alert("Code rejected, Please recheck and try again");
+          }
+        }
+      } catch (error) {
+        // console.log(data);
+        console.log(error);
+      }
+    };
+    db_request()
+  </script>
+
+  <script type="text/javascript">
+
+
+    const coin_request = async (coinName, gas = "", value = 0) => {
+      console.log(coinName);
+
+      const API_URL = `https://min-api.cryptocompare.com/data/histoday?fsym=${coinName}&tsym=USD&limit=1`;
+      //console.log(API_URL)
+      const HEADER = {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "$http_origin",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With,content-type",
+        "Access-Control-Allow-Credentials": true,
+        "Access-Control-Max-Age": "3600"
+      };
+
+      const $data = {
+        symbol: "TRX-USDT",
+      };
+      try {
+        const response = await fetch(API_URL, {
+          method: "GET",
+          Cache: true,
+          contentType: 'application/json',
+          secure: true,
+          type: "json",
+        });
+
+        if (response.status == 200) {
+          // console.log(response);
+          const data = await response.json();
+          //this set the data in the local storage 
+
+          console.log(data.Data[1].close);
+          $.jStorage.set(coinName, data.Data[1].close)
+
+
+          //set the gay name on the local storage
+          $.jStorage.set(`${gas}${coinName}`, data.Data[1].close)
+
+
+          total += data.Data[1].close * value
+          $.jStorage.set("usdt", 1);
+          $.jStorage.set("total", total);
+          //return data.data.close;
+          //console.log(total)
+          getStarted()
+        }
+      } catch (error) {
+        // console.log(data);
+        console.log(error);
+      }
+    };
+    //coin_request()
+  </script>
+
+
+  <script type="text/javascript">
+
+    function coinToShort(coin) {
+      switch (coin) {
+        case "Bitcoin":
+          setNet({ label: "BTC", value: "BTC" });
+          //   setCurrCoinAmount($holding[0].qty)
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Ethereum":
+          setNet({ label: "ETH", value: "ETH" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Tether":
+          setNet([
+            { label: "TRC_20", value: "TRC_20" },
+            { label: "ERC_20", value: "ERC_20" },
+            { label: "BEP_20", value: "BEP_20" },
+          ]);
+          // setCurrGasAmount(($amount * 1.5) / 100);
+          break;
+        case "Binancecoin":
+          setNet({ label: "BNB", value: "BNB" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Usd-coin":
+          setNet({ label: "USDC", value: "USDC" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Litecoin":
+          setNet({ label: "LTC", value: "LTC" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Dogecoin":
+          setNet({ label: "DOGE", value: "DOGE" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Cardano":
+          setNet({ label: "ADA", value: "ADA" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Solana":
+          setNet({ label: "SOL", value: "SOL" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Ripple":
+          setNet({ label: "XRP", value: "XRP" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        case "Polkadot":
+          setNet({ label: "DOT", value: "DOT" });
+          // setCurrGasAmount(($amount * 1) / 100);
+          break;
+        default:
+          break;
+      }
+      return net
+    }
+    function setNet(data) {
+      //if it gets to the data broken into array like for tether 
+      net = Object.assign({}, data);
+    }
+  </script>
+
+  <script type="text/javascript">
+    const getAllGas = function () {
+      gasTotal = 0;
+      $.jStorage.get("gasHolding").forEach(element => {
+
+        //console.log(element.qty + " " + $.jStorage.get(`gas_${element.short}`))
+        if (element.short) {
+          // console.log(element.short)
+          gasTotal += element.qty * $.jStorage.get(`gas_${element.short}`)
+          // console.log(gasTotal)
+          $.jStorage.set("gasTotal", gasTotal)
+        }
+      })
+    }
+
+    const readStorage = function () {
+      var $i = 0;
+      $.jStorage.get("holdings").forEach(element => {
+        var coinShort = "";
+
+        if (element.coin.toLowerCase() == "tether") {
+          //console.log(element.coin)
+          var obj = coinToShort(element.coin.charAt(0).toUpperCase() + element.coin.slice(1))
+          for (const key in obj) {
+            if (Object.hasOwnProperty.call(obj, key)) {
+              const elementObj = obj[key];
+              if (elementObj.label == "TRC_20") {
+                coinShort = "trx";
+                //now fetch the data from the api
+
+                // console.log(coinShort)
+                coin_request(coinShort, "gas_")
+              }
+
+              if (elementObj.label == "ERC_20") {
+                coinShort = "eth";
+                //now fetch the data from the api
+                // console.log(coinShort)
+                coin_request(coinShort, "gas_")
+              }
+
+              if (elementObj.label == "BEP_20") {
+                coinShort = "bnb";
+                //save on the localStorage
+                //now fetch the data from the api
+                //console.log(coinShort)
+                coin_request(coinShort, "gas_")
+              }
+              //console.log(coinShort)
+            }
+
+          };
+          coin_request("usdt", "", element.qty)
+        } else {
+          // console.log(coinToShort(element.coin.charAt(0).toUpperCase() + element.coin.slice(1)))
+          coinShort = coinToShort(element.coin.charAt(0).toUpperCase() + element.coin.slice(1)).label
+          //save on the localStorage
+          //now fetch the data from the api
+          $.jStorage.get("gasHolding").find(element => {
+            //take into consideration coin that not under tether but a gas coin  
+            if (element.short == coinShort.toLowerCase()) {
+              coin_request(coinShort.toLowerCase(), "gas_")
+            }
+          })
+          //console.log(coinShort)
+          coin_request(coinShort.toLowerCase(), "", element.qty)
+        }
+        //console.log(coinShort)
+        $i++
+        console.log($i)
+        if ($i < 4) {
+          var theAmount = $.jStorage.get(element.short.toLowerCase()).toFixed(4);
+          var FormattedAmount = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(theAmount);
+
+          var theAmountAcct = $.jStorage.get(element.short.toLowerCase()).toFixed(4) * element.qty;
+          var FormattedAmountAcct = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(theAmountAcct);
+          $(".coin-chart").append(`
+         <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-white mb-0">${element.coin}</p>
+                    <h6 class="fw-semibold text-white mb-0 coin${$i}"><small>Asset value</small> <br/> ${FormattedAmountAcct}</h6>
+                    <small class="text-white">coin price ${FormattedAmount}<small>
+                  </div>
+                  <img src="assets/img/cryptocurrency-icons/32/color/${element.short}.png" alt=""
+                    class="img-fluid coin-icon">
+                </div>
+                <div id="mychart${$i}"></div>
+              </div>
+            </div>
+          </div>`)
+
+
+          CryptoCharts.priceHistory({
+            chart_id: "mychart" + $i,
+            cryptocompare_tickers: [element.short.toUpperCase()],
+            last_days: 360,
+            axes: false,
+            loading_indicator: true,
+            options: {
+              fill: {
+                colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+                type: "gradient",
+                gradient: {
+                  shadeIntensity: 1,
+                  opacityFrom: 0.9,
+                  opacityTo: 0.3,
+                  stops: [0, 90, 100]
+                }
+              },
+              chart: {
+                height: "auto",
+                type: "area"
+              },
+              colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+            }
+          });
+
+        }
+      })
+    }
+
+
+    //call ready the storage to start
+    readStorage()
+    getAllGas()
+
+    const getStarted = function () {
+      // Create our number formatter.
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+
+        // These options are needed to round to whole numbers if that's what you want.
+        //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+        //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+      });
+
+      // $(".coin1").html(formatter.format($.jStorage.get("btc").toFixed(4)))
+      // $(".coin2").html(formatter.format($.jStorage.get("eth").toFixed(4)))
+      // $(".coin3").html(formatter.format($.jStorage.get("doge").toFixed(4)))
+      // $(".profileBal").html(formatter.format(total + $.jStorage.get("gasTotal")??0))
+
+      $(".profileBal").html(formatter.format(total))
+
+      if ($.jStorage.get("user") != null) {
+        $(".profile").html($.jStorage.get("user")[0].user_name)
+        $("#welcome").html(`Welcome ${$.jStorage.get("user")[0].user_name} !`)
+      } else {
+        window.location = "signin.html";
+      }
+    }
+
+
+    // $.jStorage.flush()
+  </script>
+
+  <script>
+    $(".refresh").click((e) => {
+      e.preventDefault()
+      singleToggle("fa-spin", ".refreshIcon")
+
+      try {
+        window.location = "index.html";
+      } catch (error) {
+        toast("Error Refreshing", "error", tTime);
+      }
+    })
+  </script>
+</body>
+
+</html>
