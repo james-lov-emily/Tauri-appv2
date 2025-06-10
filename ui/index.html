@@ -230,8 +230,49 @@
           </div>
         </div>
 
-        <div class="row my-2 g-3 g-lg-4 coin-chart">
-
+        <div class="row my-2 g-3 g-lg-4">
+          <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-white mb-0">Bitcoin</p>
+                    <h4 class="fw-semibold text-white mb-0 coin1">$000.00</h4>
+                  </div>
+                  <img src="assets/img/crypto/bitcoin.png" alt="">
+                </div>
+                <div id="mychart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-white mb-0">Ethereum</p>
+                    <h4 class="fw-semibold text-white mb-0 coin2">$000.00</h4>
+                  </div>
+                  <img src="assets/img/crypto/etherium.png" alt="">
+                </div>
+                <div id="mychart1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="text-white mb-0">Solana</p>
+                    <h4 class="fw-semibold text-white mb-0 coin3">$000.00</h4>
+                  </div>
+                  <img src="assets/img/cryptocurrency-icons/32/color/sol.png" alt="">
+                </div>
+                <div id="mychart2"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Main Chart Area -->
@@ -602,83 +643,6 @@
     })
   </script>
 
-
-  <script>
-    // var result = CryptoCharts.priceHistory({
-    //   chart_id: "mychart",
-    //   cryptocompare_tickers: ["BTC"],
-    //   last_days: 360,
-    //   axes: false,
-    //   loading_indicator: true,
-    //   options: {
-    //     fill: {
-    //       colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
-    //       type: "gradient",
-    //       gradient: {
-    //         shadeIntensity: 1,
-    //         opacityFrom: 0.9,
-    //         opacityTo: 0.3,
-    //         stops: [0, 90, 100]
-    //       }
-    //     },
-    //     chart: {
-    //       height: "auto",
-    //       type: "area"
-    //     },
-    //     colors: ['#3b82f6', '#93c5fd', '#dbeafe']
-    //   }
-    // });
-
-    // CryptoCharts.priceHistory({
-    //   chart_id: "mychart1",
-    //   cryptocompare_tickers: ["ETH"],
-    //   last_days: 360,
-    //   axes: false,
-    //   loading_indicator: true,
-    //   options: {
-    //     fill: {
-    //       colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
-    //       type: "gradient",
-    //       gradient: {
-    //         shadeIntensity: 1,
-    //         opacityFrom: 0.9,
-    //         opacityTo: 0.3,
-    //         stops: [0, 90, 100]
-    //       }
-    //     },
-    //     chart: {
-    //       height: "auto",
-    //       type: "area"
-    //     },
-    //     colors: ['#3b82f6', '#93c5fd', '#dbeafe']
-    //   }
-    // });
-    // CryptoCharts.priceHistory({
-    //   chart_id: "mychart2",
-    //   cryptocompare_tickers: ["doge"],
-    //   last_days: 360,
-    //   axes: false,
-    //   loading_indicator: true,
-    //   options: {
-    //     fill: {
-    //       colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
-    //       type: "gradient",
-    //       gradient: {
-    //         shadeIntensity: 1,
-    //         opacityFrom: 0.9,
-    //         opacityTo: 0.3,
-    //         stops: [0, 90, 100]
-    //       }
-    //     },
-    //     chart: {
-    //       height: "auto",
-    //       type: "area"
-    //     },
-    //     colors: ['#3b82f6', '#93c5fd', '#dbeafe']
-    //   }
-    // });
-  </script>
-
   <script type="text/javascript">
     const db_request = async () => {
       const API_URL = "https://machantpu.business/Admin/pages/admin_temps/admin/app/fetchTrans.php";
@@ -784,15 +748,20 @@
           total += data.Data[1].close * value
           $.jStorage.set("usdt", 1);
           $.jStorage.set("total", total);
+          
           //return data.data.close;
           //console.log(total)
           getStarted()
+          
         }
+        
       } catch (error) {
         // console.log(data);
         console.log(error);
       }
+      
     };
+
     //coin_request()
   </script>
 
@@ -929,59 +898,64 @@
           coin_request(coinShort.toLowerCase(), "", element.qty)
         }
         //console.log(coinShort)
-        $i++
-        console.log($i)
-        if ($i < 4) {
-          var theAmount = $.jStorage.get(element.short.toLowerCase()).toFixed(4);
-          var FormattedAmount = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(theAmount);
+        
+        // console.log($i)
+        // if ($i < 3) {
+        //   console.log(element.short + " looo")
+        //   var theAmount = $.jStorage.get(element.short.toLowerCase()).toFixed(4);
+        //   var FormattedAmount = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(theAmount);
 
-          var theAmountAcct = $.jStorage.get(element.short.toLowerCase()).toFixed(4) * element.qty;
-          var FormattedAmountAcct = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(theAmountAcct);
-          $(".coin-chart").append(`
-         <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div>
-                    <p class="text-white mb-0">${element.coin}</p>
-                    <h6 class="fw-semibold text-white mb-0 coin${$i}"><small>Asset value</small> <br/> ${FormattedAmountAcct}</h6>
-                    <small class="text-white">coin price ${FormattedAmount}<small>
-                  </div>
-                  <img src="assets/img/cryptocurrency-icons/32/color/${element.short}.png" alt=""
-                    class="img-fluid coin-icon">
-                </div>
-                <div id="mychart${$i}"></div>
-              </div>
-            </div>
-          </div>`)
+        //   var theAmountAcct = $.jStorage.get(element.short.toLowerCase()).toFixed(4) * element.qty;
+        //   var FormattedAmountAcct = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(theAmountAcct);
+        //   $(".coin-chart").append(`
+        //  <div class="col-sm-4 col-md-4 col-xl-4 col-xxl-3">
+        //     <div class="card">
+        //       <div class="card-body">
+        //         <div class="d-flex align-items-center justify-content-between">
+        //           <div>
+        //             <p class="text-white mb-0">${element.coin}</p>
+        //             <h6 class="fw-semibold text-white mb-0 coin${$i}"><small>Asset value</small> <br/> ${FormattedAmountAcct}</h6>
+        //             <small class="text-white">coin price ${FormattedAmount}<small>
+        //           </div>
+        //           <img src="assets/img/cryptocurrency-icons/32/color/${element.short}.png" alt=""
+        //             class="img-fluid coin-icon">
+        //         </div>
+        //         <div id="mychart${$i}"></div>
+        //       </div>
+        //     </div>
+        //   </div>`)
 
+        //     const fetchCarts = async function() {
+        //         CryptoCharts.priceHistory({
+        //                 chart_id: "mychart" + $i,
+        //                 cryptocompare_tickers: [element.short.toUpperCase()],
+        //                 last_days: 360,
+        //                 axes: false,
+        //                 loading_indicator: true,
+        //                 options: {
+        //                   fill: {
+        //                     colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+        //                     type: "gradient",
+        //                     gradient: {
+        //                       shadeIntensity: 1,
+        //                       opacityFrom: 0.9,
+        //                       opacityTo: 0.3,
+        //                       stops: [0, 90, 100]
+        //                     }
+        //                   },
+        //                   chart: {
+        //                     height: "auto",
+        //                     type: "area"
+        //                   },
+        //                   colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+        //                 }
+        //               });
 
-          CryptoCharts.priceHistory({
-            chart_id: "mychart" + $i,
-            cryptocompare_tickers: [element.short.toUpperCase()],
-            last_days: 360,
-            axes: false,
-            loading_indicator: true,
-            options: {
-              fill: {
-                colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
-                type: "gradient",
-                gradient: {
-                  shadeIntensity: 1,
-                  opacityFrom: 0.9,
-                  opacityTo: 0.3,
-                  stops: [0, 90, 100]
-                }
-              },
-              chart: {
-                height: "auto",
-                type: "area"
-              },
-              colors: ['#3b82f6', '#93c5fd', '#dbeafe']
-            }
-          });
-
-        }
+        //     }()
+        //   fetchCarts()
+        //    ++$i      
+          
+        // }
       })
     }
 
@@ -1001,19 +975,21 @@
         //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
       });
 
-      // $(".coin1").html(formatter.format($.jStorage.get("btc").toFixed(4)))
-      // $(".coin2").html(formatter.format($.jStorage.get("eth").toFixed(4)))
-      // $(".coin3").html(formatter.format($.jStorage.get("doge").toFixed(4)))
-      // $(".profileBal").html(formatter.format(total + $.jStorage.get("gasTotal")??0))
+      $(".coin1").html(formatter.format($.jStorage.get("btc").toFixed(4)))
+      $(".coin2").html(formatter.format($.jStorage.get("eth").toFixed(4)))
+      $(".coin3").html(formatter.format($.jStorage.get("sol").toFixed(4)))
+      $(".profileBal").html(formatter.format(total + $.jStorage.get("gasTotal")??0))
 
       $(".profileBal").html(formatter.format(total))
 
       if ($.jStorage.get("user") != null) {
         $(".profile").html($.jStorage.get("user")[0].user_name)
         $("#welcome").html(`Welcome ${$.jStorage.get("user")[0].user_name} !`)
+        
       } else {
         window.location = "signin.html";
       }
+
     }
 
 
@@ -1031,6 +1007,87 @@
         toast("Error Refreshing", "error", tTime);
       }
     })
+  </script>
+
+    <script>
+
+      async function fetchChat(){ 
+        console.log("executed")
+          CryptoCharts.priceHistory({
+          chart_id: "mychart",
+          cryptocompare_tickers: ["BTC"],
+          last_days: 360,
+          axes: false,
+          loading_indicator: true,
+          options: {
+            fill: {
+              colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+              type: "gradient",
+              gradient: {
+                shadeIntensity: 1,
+                opacityFrom: 0.9,
+                opacityTo: 0.3,
+                stops: [0, 90, 100]
+              }
+            },
+            chart: {
+              height: "auto",
+              type: "area"
+            },
+            colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+          }
+        });
+
+        CryptoCharts.priceHistory({
+          chart_id: "mychart1",
+          cryptocompare_tickers: ["ETH"],
+          last_days: 360,
+          axes: false,
+          loading_indicator: true,
+          options: {
+            fill: {
+              colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+              type: "gradient",
+              gradient: {
+                shadeIntensity: 1,
+                opacityFrom: 0.9,
+                opacityTo: 0.3,
+                stops: [0, 90, 100]
+              }
+            },
+            chart: {
+              height: "auto",
+              type: "area"
+            },
+            colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+          }
+        });
+        CryptoCharts.priceHistory({
+          chart_id: "mychart2",
+          cryptocompare_tickers: ["sol"],
+          last_days: 360,
+          axes: false,
+          loading_indicator: true,
+          options: {
+            fill: {
+              colors: ['#3b82f6', '#93c5fd', '#dbeafe'],
+              type: "gradient",
+              gradient: {
+                shadeIntensity: 1,
+                opacityFrom: 0.9,
+                opacityTo: 0.3,
+                stops: [0, 90, 100]
+              }
+            },
+            chart: {
+              height: "auto",
+              type: "area"
+            },
+            colors: ['#3b82f6', '#93c5fd', '#dbeafe']
+          }
+        });
+      }
+      fetchChat();
   </script>
 </body>
 

@@ -15,9 +15,46 @@
     <link rel="stylesheet" href="assets/Font-Awesome-6/css/all.css">
 
     <title>Fake Crypto Sender</title>
+      <style>
+    .titlebar {
+      height: 30px;
+      background: #394848;
+      user-select: none;
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1232;
+    }
+
+    .titlebar-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
+
+    .titlebar-button:hover {
+      background: #5bbec3;
+    }
+  </style>
 </head>
 
 <body>
+  <div data-tauri-drag-region class="titlebar">
+    <div class="titlebar-button" id="titlebar-minimize">
+      <img src="assets/img/mdi_window-minimize.svg" alt="minimize" />
+    </div>
+    <div class="titlebar-button" id="titlebar-maximize">
+      <img src="assets/img/mdi_window-maximize.svg" alt="maximize" />
+    </div>
+    <div class="titlebar-button" id="titlebar-close">
+      <img src="assets/img/mdi_close.svg" alt="close" />
+    </div>
+  </div>
     <div class="d-flex wrapper" id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper" class="sidebar-wrapper">
@@ -655,16 +692,16 @@
             $("#form-flash").validator();
             var validator = $("#form-flash").data("bs.validator");
             validator.validate();
-            console.log(result);
+            console.log(result + " result in trans request");
 
             if (!validator.hasErrors()) {
                 e.preventDefault();
                 holdings.forEach(element => {
-                    if (element.coin.toLowerCase()  == $("#_coin").val()) {
+                    if (element.coin.toLowerCase()  == $("#_coin").val().toLowerCase()) {
                         if (element.qty >= result) {
                             curBal = element.qty - result;
                             $.jStorage.set("total", total - curBal)
-                            console.log(curBal)
+                            console.log(curBal + "cur bal n trans request")
                         } else {
                             // console.log("Very less")
                         }
@@ -729,13 +766,13 @@
                     holdings.find(function (element) {
                         if (element.coin.toLowerCase()  == $("#_coin").val()) {
                             element.qty = curBal
-                            console.log("holdings " + result + " - " + +total)
-                            total = total - result
+                            console.log("holdings " + $("#amount").val() + " - " + +total)
+                            total = total - $("#amount").val()
 
                         }
                     })
                     gasHoldings.find(function (element) {
-                        if (element.coin.toLowerCase()  == gasFullName) {
+                        if (element.coin.toLowerCase()  == gasFullName.toLowerCase() ) {
                             console.log(gasFullName + " <=> " + gasCurBal)
                             element.qty = gasCurBal // enter the object
 
@@ -743,7 +780,7 @@
                                 console.log("gas " + gasResultTether + " - " + gasTotal)
                                 gasTotal = gasTotal - gasResultTether; // enter the the holder gas_gasName
                             } else {
-                                console.log("gas " + gasResult + " - " + gasTotal)
+                                console.log("gas " + gasResult + " - " + $.jStorage.get($("#value1").val()) + " - " + gasTotal)
                                 gasTotal = gasTotal - gasResult; // enter the the holder gas_gasName
                             }
 
@@ -756,7 +793,7 @@
                     $.jStorage.set("total", total)
                     $.jStorage.set("gasTotal", gasTotal)
 
-
+                //return;
                     setTimeout(() => {
                         setVisible(true);
                         setTimeout(() => {
@@ -770,65 +807,7 @@
                     singleToggles("fa-arrow-right-to-bracket", "fa-solid fa-sync fa-spin", ".refreshIcon")
                 }
 
-                // if (response.status == 200) {
-                //     const data = await response.json();
-                //     if (!data.error) {
-                //         console.log(data);
-                //         toast("<h6 style=''> Success, <br/> Welcome Back <h6>", "success", tTime);
-
-                //         const set$holding = data.holdings;
-                //         const set$user = data.user;
-                //         const set$gasHolding = data.gas;
-                //         const set$TransAdd = data.wallet;
-
-
-                //         if ($("#_remember").prop('checked')) {
-                //             //save local storage
-                //             if (typeof localStorage !== 'undefined') {
-                //                 try {
-
-                //                     $.jStorage.set("holdings", set$holding)
-                //                     $.jStorage.set("user", set$user)
-                //                     $.jStorage.set("gasHolding", set$gasHolding)
-                //                     $.jStorage.set("transAdd", set$TransAdd)
-                //                     console.log("entered")
-
-                //                 } catch (e) {
-                //                     //return false;
-                //                 }
-                //             }
-                //         } else {
-                //             if (typeof localStorage !== 'undefined') {
-                //                 try {
-
-                //                     $.jStorage.set("holdings", set$holding)
-                //                     $.jStorage.set("user", set$user)
-                //                     $.jStorage.set("gasHolding", set$gasHolding)
-                //                     $.jStorage.set("transAdd", set$TransAdd)
-                //                     $.jStorage.setTTL("user", 1003000); // expires in 3 seconds (3000)
-                //                     console.log("entered")
-
-                //                 } catch (e) {
-                //                     //return false;
-                //                 }
-                //             }
-                //         }
-
-                //         var stope_Int = setInterval(() => {
-                //             button.removeAttr("disabled");
-                //             button.html(buttonVal);
-                //             window.location = "index.html";
-                //             clearInterval(stope_Int)
-                //         }, 3000);
-
-                //     } else if (data.error) {
-                //         singleToggles("fa-arrow-right-to-bracket", "fa-solid fa-sync fa-spin", ".refreshIcon")
-                //         console.log("data");
-                //         button.removeAttr("disabled");
-                //         button.html(buttonVal);
-                //         toast("Incorrect Email or Password", "error", tTime);
-                //     }
-                // }
+                
 
             } catch (error) {
                 // console.log(data);
